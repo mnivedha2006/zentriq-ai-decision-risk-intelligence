@@ -15,10 +15,6 @@ if not gemini_api_key:
 genai.configure(api_key=gemini_api_key)
 
 def extract_decisions_with_ai(document_text: str) -> list:
-    """
-    Sends meeting text to Google Gemini (gemini-3.8-flash) and extracts structured 
-    decision fields in a JSON format.
-    """
     prompt = f"""
     You are an AI Decision Risk Intelligence engine called Zentriq. 
     Analyze the following business meeting text and extract all business decisions discussed.
