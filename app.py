@@ -28,7 +28,7 @@ if st.sidebar.button("Run Risk Intelligence Pipeline"):
             from src.ai_extractor import extract_decisions_with_ai
             from src.risk_engine import evaluate_all_decisions
             from src.dashboard_aggregator import aggregate_portfolio_risks
-
+            
             if uploaded_file is not None:
                 temp_path = "temp_transcript.txt"
                 with open(temp_path, "wb") as f:
