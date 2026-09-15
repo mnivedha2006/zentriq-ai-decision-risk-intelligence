@@ -1,0 +1,6 @@
+Project Review Meeting – 10 Sept
+Manager: We are planning the product launch for Sept 20.
+Ravi: API integration should be completed by Sept 18.
+Priya: Marketing campaign cannot start until pricing is finalized.
+Manager: Pricing is still under discussion.
+No owner has been assigned for the pricing decision.
