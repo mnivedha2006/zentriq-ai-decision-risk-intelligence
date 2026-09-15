@@ -1,7 +1,18 @@
 import os
 import json
 import google.generativeai as genai
-from google.colab import userdata
+try:
+    from google.colab import userdata
+except ImportError:
+    import os
+    import streamlit as st
+    class MockUserdata:
+        def get(self, key):
+            try:
+                return st.secrets.get(key)
+            except Exception:
+                return os.environ.get(key)
+    userdata = MockUserdata()
 
 try:
     gemini_api_key = userdata.get('GEMINI_API_KEY')
